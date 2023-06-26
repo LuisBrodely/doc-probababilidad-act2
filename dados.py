@@ -82,6 +82,6 @@ if opcion.lower() == "si":
             resultados_menor.append(combinacion + ("Menor",))
 
     print(f"Combinaciones con suma menor a {numero} ({len(resultados_menor)} combinaciones):")
-    headers = [f"Objeto {i + 1}" for i in range(len(combinaciones[0]))]
+    headers = [f"Objeto dado{i + 1}" for i in range(len(combinaciones[0]))]
     table_menor = tabulate(resultados_menor, headers=headers+["Resultado"], tablefmt="grid")
     print(table_menor)
